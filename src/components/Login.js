@@ -3,7 +3,7 @@ import Header from "./Header";
 
 function Login() {
   return (
-    <div className="absolute">
+    <div className="">
       <Header />
       <div>
         <img
