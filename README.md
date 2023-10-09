@@ -1,0 +1,2 @@
+# netflix-gpt
+React project
