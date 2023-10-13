@@ -5,18 +5,23 @@ import { checkValidData } from "../utils/validate";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  updateProfile,
 } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig, auth } from "../utils/firebase";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 function Login() {
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
 
+  const dispatch = useDispatch();
   const [errorMsg, setErrorMsg] = useState(null);
-
   const [isSignInForm, setSignInForm] = useState(true);
+
   const toogleSignInForm = () => {
     setSignInForm(!isSignInForm);
   };
@@ -44,8 +49,26 @@ function Login() {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log("user: ", user);
-          // ...
+
+          updateProfile(user, {
+            displayName: name.current.value,
+            photoURL: USER_AVATAR,
+          })
+            .then(() => {
+              // Profile updated!
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
+            })
+            .catch((error) => {
+              setErrorMsg(error);
+            });
         })
         .catch((error) => {
           const errorCode = error.code;

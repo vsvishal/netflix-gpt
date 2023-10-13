@@ -46,3 +46,9 @@ Project Deployed link : https://netflixgpt-eaae1.web.app/
 
 - npm i -D @reduxjs/toolkit
 - npm i react-redux
+
+## Movie api TMDB
+
+d40a11e516bce49e66baacb0c9e43a05
+
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDBhMTFlNTE2YmNlNDllNjZiYWFjYjBjOWU0M2EwNSIsInN1YiI6IjY1Mjk1YzIxNjI5YjJjMDBhYzYwNDIzMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kLovm6EqgKjmFcpGBBqB01VF6JYhTje4AXz8v8I8uI4
