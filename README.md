@@ -52,3 +52,8 @@ Project Deployed link : https://netflixgpt-eaae1.web.app/
 d40a11e516bce49e66baacb0c9e43a05
 
 eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDBhMTFlNTE2YmNlNDllNjZiYWFjYjBjOWU0M2EwNSIsInN1YiI6IjY1Mjk1YzIxNjI5YjJjMDBhYzYwNDIzMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kLovm6EqgKjmFcpGBBqB01VF6JYhTje4AXz8v8I8uI4
+
+## Everything in react is called 2 times due to <React.StrictMode> in only development phase
+
+- It does some extra checks which is good for during development phase (it investigates the calls between the components)
+- It doesn not render 2 times in production
