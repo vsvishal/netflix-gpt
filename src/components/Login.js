@@ -84,7 +84,6 @@ function Login() {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log("user ", user);
         })
         .catch((error) => {
           const errorCode = error.code;
