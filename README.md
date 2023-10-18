@@ -57,3 +57,9 @@ eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDBhMTFlNTE2YmNlNDllNjZiYWFjYjBjOWU0M2EwNSIsInN
 
 - It does some extra checks which is good for during development phase (it investigates the calls between the components)
 - It doesn not render 2 times in production
+
+### Create Openai secret key & install the openai package
+
+https://platform.openai.com/account/api-keys
+
+- npm install --save openai
