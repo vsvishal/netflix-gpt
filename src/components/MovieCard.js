@@ -5,7 +5,7 @@ function MovieCard({ posterPath }) {
   if (!posterPath) return;
 
   return (
-    <div className="w-40 pr-3">
+    <div className="w-32 md:w-40 pr-3">
       <img alt="movie poster" src={IMG_CDN + posterPath} />
     </div>
   );

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 
 function VideoBackground({ movieId }) {
-  const trailerVideo = useSelector((store) => store.movies.trailerVideo);
+  const trailerVideos = useSelector((store) => store.movies.trailerVideos);
   useMovieTrailer(movieId);
 
   return (
@@ -12,7 +12,7 @@ function VideoBackground({ movieId }) {
         className="w-screen aspect-video"
         src={
           "https://www.youtube.com/embed/fQfrzHFmVe8?si=" +
-          trailerVideo?.key +
+          trailerVideos?.key +
           "?&autoplay=1&mute=1"
         }
         title="YouTube video player"

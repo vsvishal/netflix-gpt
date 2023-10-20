@@ -35,8 +35,6 @@ function GptSearchBar() {
     });
 
     const gptMovies = gptResults?.choices?.[0].message?.content.split(",");
-    console.log("gptMovies ", gptMovies);
-    searchMovieTMDB(gptMovies[0]);
 
     const getAllPromises = gptMovies.map((movie) => searchMovieTMDB(movie));
 
@@ -44,24 +42,22 @@ function GptSearchBar() {
     dispatch(
       addGptMovies({ gptMoviesName: gptMovies, tmdbMovies: tmdbResults })
     );
-
-    console.log("tmdbResults ", tmdbResults);
   };
 
   return (
-    <div className="py-[8%] flex justify-center">
+    <div className="py-[42%] md:py-[8%] flex justify-center">
       <form
-        className="w-1/2 p-2 m-0 bg-black grid grid-cols-12"
+        className="w-full md:w-1/2 p-2 m-0 bg-black grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           type="text"
           placeholder={lang[langKey].gptSearchPlaceholder}
-          className="px-10 py-2 col-span-9"
+          className="p-4 md:px-10 py-2 col-span-9 text-sm md:text-lg"
           ref={searchText}
         />
         <button
-          className="ml-6 rounded-md bg-red-600 text-white py-2 px-6 col-span-3"
+          className="ml-2 md:ml-6 rounded-md bg-red-600 text-white py-2  md:px-6 col-span-3"
           onClick={handleGptSearchClick}
         >
           {lang[langKey].search}

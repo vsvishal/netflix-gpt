@@ -5,13 +5,19 @@ import bgImage from "../images/netflix-background.jpg";
 
 function GptSearch() {
   return (
-    <div>
-      <div className="absolute -z-10">
-        <img src={bgImage} alt="backaground" />
+    <>
+      <div className="fixed -z-10">
+        <img
+          className="md:h-auto h-screen object-cover"
+          src={bgImage}
+          alt="backaground"
+        />
       </div>
-      <GptSearchBar />
-      <GptMovieSuggestion />
-    </div>
+      <div className="">
+        <GptSearchBar />
+        <GptMovieSuggestion />
+      </div>
+    </>
   );
 }
 

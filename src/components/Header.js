@@ -55,40 +55,35 @@ function Header() {
   };
 
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10">
-      <div className="flex justify-between">
-        <img src={LOGO} alt="logo" className="w-44" />
-        {user && (
-          <div className="flex p-2">
-            {showGptSearch && (
-              <select
-                className="px-4 mx-3 my-2 bg-blue-900 text-white"
-                onClick={handleLanguageChange}
-              >
-                {SUPPORTED_LANGUAGES.map((lang) => (
-                  <option key={lang.identifier} value={lang.identifier}>
-                    {lang.name}
-                  </option>
-                ))}
-              </select>
-            )}
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+      <img src={LOGO} alt="logo" className="w-44 mx-auto md:mx-0" />
+      {user && (
+        <div className="flex p-2 justify-center">
+          {showGptSearch && (
+            <select
+              className="px-4 mx-3 my-2 bg-blue-900 text-white"
+              onClick={handleLanguageChange}
+            >
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option key={lang.identifier} value={lang.identifier}>
+                  {lang.name}
+                </option>
+              ))}
+            </select>
+          )}
 
-            <button
-              className="text-white bg-purple-600 px-4 mx-4 my-2 rounded-sm hover:bg-purple-500"
-              onClick={handleGptSearchClick}
-            >
-              {showGptSearch ? "Home" : "GPT Search"}
-            </button>
-            <img src={user.photoURL} alt="avatar" className="w-12 h-12" />
-            <button
-              onClick={handleSignOut}
-              className="font-bold text-white mx-1"
-            >
-              (Sign Out)
-            </button>
-          </div>
-        )}
-      </div>
+          <button
+            className="text-white bg-purple-600 px-4 mx-4 my-2 rounded-sm hover:bg-purple-500"
+            onClick={handleGptSearchClick}
+          >
+            {showGptSearch ? "Home" : "GPT Search"}
+          </button>
+          <img src={user.photoURL} alt="avatar" className="w-12 h-12" />
+          <button onClick={handleSignOut} className="font-bold text-white mx-1">
+            (Sign Out)
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -63,3 +63,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDBhMTFlNTE2YmNlNDllNjZiYWFjYjBjOWU0M2EwNSIsInN
 https://platform.openai.com/account/api-keys
 
 - npm install --save openai
+
+### By default CSS is applied for mobile devices
+
+- Default is mobile, sm is for tab, & md for desktop
