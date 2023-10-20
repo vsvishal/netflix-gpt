@@ -40,7 +40,7 @@
 - Password validation: https://regexr.com/3bfsi
 - Name validation: https://regex101.com/r/gK4eN5/1
 
-Project Deployed link : https://netflixgpt-eaae1.web.app/
+Project Deployed link : https://netflixgpt-eaae1.web.app/ https://netflixgpt-eaae1.web.app
 
 ## REDUX
 
