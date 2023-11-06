@@ -4,34 +4,36 @@
 - While searching users will get movie recommendations through OpenAI API.
 - The application is built using React.js, Node.js, Redux, Tailwind CSS, and Firebase.
 
+[👆 applink: netflix-gpt](https://netflixgpt-6abc2.web.app)
+
 ## 😃 Project overiew
 
 - SignIn Page
 
-  ![SignIn]()
+  ![SignIn](https://github.com/vsvishal/netflix-gpt/blob/d8027c4c40b6d1fdb1866f757c8315a3abdb3e43/src/images/app-images/main-page.png)
 
 ###
 
 - SignUp Page
 
-  ![SignUp]()
+  ![SignUp](https://github.com/vsvishal/netflix-gpt/blob/d8027c4c40b6d1fdb1866f757c8315a3abdb3e43/src/images/app-images/signup.png)
 
 ###
 
 - Main Page
 
-  ![Main]()
+  ![Main](https://github.com/vsvishal/netflix-gpt/blob/d8027c4c40b6d1fdb1866f757c8315a3abdb3e43/src/images/app-images/Signin.png)
 
 ###
 
 - GPT Page
 
-  ![GPT]()
+  ![GPT](https://github.com/vsvishal/netflix-gpt/blob/d8027c4c40b6d1fdb1866f757c8315a3abdb3e43/src/images/app-images/Gptpage.png)
 
 ###
 
 - Multilanguage Page
 
-  ![multiplang]()
+  ![multiplang](https://github.com/vsvishal/netflix-gpt/blob/d8027c4c40b6d1fdb1866f757c8315a3abdb3e43/src/images/app-images/multilang.png)
 
-###
+##
