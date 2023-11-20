@@ -4,7 +4,7 @@
 - While searching users will get movie recommendations through OpenAI API.
 - The application is built using React.js, Node.js, Redux, Tailwind CSS, and Firebase.
 
-[👆 applink: netflix-gpt](https://netflix-gpt-d3ac7.web.app/)
+[👆 applink: netflix-gpt]([https://netflix-gpt-d3ac7.web.app/](https://netflix-gpt-ebon.vercel.app/))
 
 ## 😃 Project overiew
 
