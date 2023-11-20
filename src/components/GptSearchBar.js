@@ -57,7 +57,7 @@ function GptSearchBar() {
           ref={searchText}
         />
         <button
-          className="ml-2 md:ml-6 rounded-md bg-red-600 text-white py-2  md:px-6 col-span-3"
+          className="ml-2 md:ml-6 rounded-md bg-red-600 text-white py-2  md:px-6 col-span-3 hover:bg-red-400"
           onClick={handleGptSearchClick}
         >
           {lang[langKey].search}
